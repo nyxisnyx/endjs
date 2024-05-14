@@ -1,3 +1,4 @@
+
 /*Publish a web page that shows a random quote from an available Web Service, from the Quotes serving website: https://thatsthespir.it
 
 The web service sits at this URL: https://thatsthespir.it/api. It is called the endpoint".
@@ -39,14 +40,20 @@ async function displayQuote() {
         const qt = await fetchQuote();
         const resultsContainer = document.getElementById('resultsContainer');
 
-        quoteAlready = document.getElementById('quoteText');
-        authorAlready = document.getElementById('quoteAuthor');
+        resultsContainer.innerHTML = '';
 
-        if (quoteAlready) {
-            //delete
-            quoteAlready.remove()
-            authorAlready.remove()
-        }
+        // let quoteAlready = document.getElementById('quoteText');
+        // let authorAlready = document.getElementById('quoteAuthor');
+        // console.log(quoteAlready);
+
+
+
+        // if (quoteAlready) {
+        //     console.log('condition true')
+        //     //delete
+        //     quoteAlready.remove()
+        //     authorAlready.remove()
+        // }
 
         // Create a new div for displaying result
         const resultDiv = createDiv('result');
@@ -74,4 +81,7 @@ window.onload = () => {
 
 
 // Event listener for button click
-document.getElementById('submitButton').addEventListener('click', displayQuote);
+ //const button = ;
+ document.getElementById('submitButton').addEventListener('click', displayQuote);
+
+// displayQuote();

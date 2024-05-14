@@ -1,1 +1,68 @@
-/*# sourceMappingURL=style.css.map */
+body::before {
+  content: "&";
+  font-size: 150vh;
+  color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: -35vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+body {
+  animation: animateBg 4s linear infinite;
+  background-image: linear-gradient(90deg, #1B1E3E, #2B4D6B, #1B1E3E, #2B4D6B);
+  background-size: 300% 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden !important;
+}
+@keyframes animateBg {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+body header h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 3vw;
+  color: #FAD493;
+  font-weight: 100;
+  text-align: center;
+  width: 100%;
+  margin-top: 5%;
+  max-height: 20%;
+}
+body main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body main img {
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  filter: invert(77%) sepia(26%) saturate(735%) hue-rotate(1deg) brightness(104%) contrast(78%);
+}
+body main #dividerTop {
+  margin-top: 2%;
+  margin-bottom: -2%;
+}
+body main #dividerBottom {
+  margin-top: -2%;
+  margin-bottom: 2%;
+}
+body main #resultsContainer {
+  text-align: center;
+  color: #FAD493;
+  background-color: #1B1E3E;
+  width: 60%;
+  padding: 10%;
+}
+body main #submitButton {
+  z-index: 20;
+}/*# sourceMappingURL=style.css.map */
